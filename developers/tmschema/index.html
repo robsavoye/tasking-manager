@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://www.hotosm.org/developers/understanding-the-code/">
+        <link rel="canonical" href="https://www.hotosm.org/developers/tmschema/">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Understanding the Code - tasking-manager</title>
+        <title>Tasking Manager Database Schema - tasking-manager</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-the-code" class="md-skip">
+        <a href="#tasking-manager-database-schema" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Understanding the Code
+              Tasking Manager Database Schema
             
           </span>
         </div>
@@ -522,6 +522,111 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#misc-tables" class="md-nav__link">
+    Misc Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prepopulated-tables" class="md-nav__link">
+    Prepopulated Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campaign-tables" class="md-nav__link">
+    Campaign Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organization-tables" class="md-nav__link">
+    Organization Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-tables" class="md-nav__link">
+    Project Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-table" class="md-nav__link">
+    Messages Table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-tables" class="md-nav__link">
+    Task Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-history-table" class="md-nav__link">
+    Task History Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-invalidation-history-table" class="md-nav__link">
+    Task Invalidation History Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-mapping-issues" class="md-nav__link">
+    Task Mapping Issues
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-tables" class="md-nav__link">
+    Team Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-tables" class="md-nav__link">
+    User Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification-table" class="md-nav__link">
+    Notification Table
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -538,8 +643,107 @@
   
 
 
-<h1 id="understanding-the-code">Understanding the Code<a class="headerlink" href="#understanding-the-code" title="Permanent link">&para;</a></h1>
+<h1 id="tasking-manager-database-schema">Tasking Manager Database Schema<a class="headerlink" href="#tasking-manager-database-schema" title="Permanent link">&para;</a></h1>
+<p>The TM database schema has evolved over the years. It is currently
+implemented using sqlalchmey for the backend.</p>
+<h2 id="misc-tables">Misc Tables<a class="headerlink" href="#misc-tables" title="Permanent link">&para;</a></h2>
+<ul>
+<li>alembic_version - The version of alembic used</li>
+<li>banner - A list of banners, which doesn't appear to be used anywhere</li>
+<li>priority_areas - A list of geometries for priority areas</li>
+<li>release_version - The version of the TM release</li>
+<li>spatial_ref_sys - Postgis support</li>
+</ul>
+<h2 id="prepopulated-tables">Prepopulated Tables<a class="headerlink" href="#prepopulated-tables" title="Permanent link">&para;</a></h2>
+<p>These tables contain data used by the frontend mostly. These could
+have been an Enum, but a tables can be updated by the front end,
+whereas an Enum can't. It does seem entirely possible these could be
+extended by a project manager, for example, adding a new license.</p>
+<ul>
+<li>interests - General mapper interests</li>
+<li>licenses - Data licenses</li>
+<li>mapping_issue_categories - Issues with the map data</li>
+<li>application_keys - Application keys for remote data. This appears to
+  not be used.</li>
+</ul>
+<h2 id="campaign-tables">Campaign Tables<a class="headerlink" href="#campaign-tables" title="Permanent link">&para;</a></h2>
+<p>The campaigns table is for mapping campaigns. A single campaign can
+involve multiple organizations and TM projects. </p>
+<ul>
+<li>campaigns - Primary table</li>
+<li>campaign_organisations - Utility table to relate organizations with
+  a campaign</li>
+<li>campaign_projects - Utility table to relate projects with a campaign</li>
+</ul>
+<h2 id="organization-tables">Organization Tables<a class="headerlink" href="#organization-tables" title="Permanent link">&para;</a></h2>
+<p>This is for an Organization profile.</p>
+<ul>
+<li>organisations - Primary table</li>
+<li>organisation_managers - Utility table to relate managers with an organization</li>
+</ul>
+<h2 id="project-tables">Project Tables<a class="headerlink" href="#project-tables" title="Permanent link">&para;</a></h2>
+<p>A project is the area to be mapped for the campaign. Each project
+contains members and teams, which are stored in other tables.</p>
+<ul>
+<li>projects - Primary table</li>
+<li>project_allowed_users - Utility table to relate users to projects</li>
+<li>project_custom_editors - Utility table to store custom mapping
+  editors, currently only used by RapidID</li>
+<li>project_favorites - Utility table to store favorite projects for a user</li>
+<li>project_info - Details on the project, like the description &amp; instructions</li>
+<li>project_interests - Utility table to relate projects to interest categories</li>
+<li>project_priority_areas - Utility table to relate priority areas to projects</li>
+<li>project_teams - Utility table to relate team roles to projects</li>
+<li>project_chat - Support commenting for a project</li>
+</ul>
+<h2 id="messages-table">Messages Table<a class="headerlink" href="#messages-table" title="Permanent link">&para;</a></h2>
+<p>Support messaging between users.</p>
+<ul>
+<li>messages - Primary table</li>
+</ul>
+<h2 id="task-tables">Task Tables<a class="headerlink" href="#task-tables" title="Permanent link">&para;</a></h2>
+<p>A task is the area for a mapper to map. Task management is obviously a
+key function of the Tasking Manager.</p>
+<ul>
+<li>tasks - Primary table</li>
+<li>task_annotations - Utility table for something, it appears to be
+  unused anywhere</li>
+<li>task_history - Table for task history</li>
+<li>task_invalidation_history - Table for task invalidation history</li>
+<li>task_mapping_issues - Table for issues with a task</li>
+</ul>
+<h3 id="task-history-table">Task History Table<a class="headerlink" href="#task-history-table" title="Permanent link">&para;</a></h3>
+<p>This table is used to track the state changes for a task, not
+including a task being invalidated. It contains a description of the
+status change, when it changed, and the user ID when the task is
+locked for mapping. A single task for a project may go through several
+state changes during it's lifespan.</p>
+<h3 id="task-invalidation-history-table">Task Invalidation History Table<a class="headerlink" href="#task-invalidation-history-table" title="Permanent link">&para;</a></h3>
+<p>This table is used to track tasks that are invalidated. Unlike simple
+state changes in the task history table, this tracks which validator
+invalidated the task, when it was invalidated, and when the issue is
+resolved.</p>
+<h3 id="task-mapping-issues">Task Mapping Issues<a class="headerlink" href="#task-mapping-issues" title="Permanent link">&para;</a></h3>
 <p>TBD</p>
+<h2 id="team-tables">Team Tables<a class="headerlink" href="#team-tables" title="Permanent link">&para;</a></h2>
+<p>This is for OSM Team support.</p>
+<ul>
+<li>teams - Primary table</li>
+<li>team_members - Utility table for team member profiles</li>
+</ul>
+<h2 id="user-tables">User Tables<a class="headerlink" href="#user-tables" title="Permanent link">&para;</a></h2>
+<ul>
+<li>users - Primary table</li>
+<li>user_interests - Utility table to relate interests for a user</li>
+<li>user_licenses - Utility table to relate the data license to user</li>
+<li>users_with_email - Utility table of user email addresses, which
+  appears to be unused</li>
+</ul>
+<h2 id="notification-table">Notification Table<a class="headerlink" href="#notification-table" title="Permanent link">&para;</a></h2>
+<p>This is a simple system for notifications. </p>
+<ul>
+<li>notifications - Primary table</li>
+</ul>
 
 
 

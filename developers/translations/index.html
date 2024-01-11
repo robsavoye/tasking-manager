@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://www.hotosm.org/sysadmins/networking-connectivity/">
+        <link rel="canonical" href="https://www.hotosm.org/developers/translations/">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Networking and Connectivity - tasking-manager</title>
+        <title>Translations - tasking-manager</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#networking-and-connectivity" class="md-skip">
+        <a href="#translations" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Networking and Connectivity
+              Translations
             
           </span>
         </div>
@@ -298,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developers/contributing-guidelines/" class="md-nav__link">
+      <a href="../contributing-guidelines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developers/development-setup/" class="md-nav__link">
+      <a href="../development-setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -338,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developers/versions-and-releases/" class="md-nav__link">
+      <a href="../versions-and-releases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment/" class="md-nav__link">
+      <a href="../../sysadmins/deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ci-cd/" class="md-nav__link">
+      <a href="../../sysadmins/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
+      <a href="../../sysadmins/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -519,8 +519,69 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    Translations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developers" class="md-nav__link">
+    Developers
+  </a>
+  
+    <nav class="md-nav" aria-label="Developers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-transifex-locally" class="md-nav__link">
+    Setting up Transifex locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-translation-strings" class="md-nav__link">
+    Update translation strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-with-latest-translations" class="md-nav__link">
+    Update with latest translations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-new-language" class="md-nav__link">
+    Adding a new language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-translations" class="md-nav__link">
+    Pushing translations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -538,8 +599,79 @@
   
 
 
-<h1 id="networking-and-connectivity">Networking and Connectivity<a class="headerlink" href="#networking-and-connectivity" title="Permanent link">&para;</a></h1>
-<p>TBD</p>
+  <h1>Translations</h1>
+
+<h2 id="translations">Translations<a class="headerlink" href="#translations" title="Permanent link">&para;</a></h2>
+<p>The Tasking Manager is localised using our <a href="https://www.transifex.com/hotosm/tasking-manager/dashboard/">Transifex
+repository</a>. This
+is super easy. If you are interested, make yourself an account and
+apply to join the <code>hotosm-translator</code> team. Everybody is welcome to
+support translations through the Transifex website.</p>
+<h2 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h2>
+<p>For developers, Transifex offers a <a href="https://docs.transifex.com/client/introduction/">CLI
+client</a> and the
+Tasking Manager offers commands to interact with it. The client is
+already included in <code>requirements.txt</code> so you should have the
+Transifex commands installed once you have set up your backend side
+code.</p>
+<p>The Tasking Manager is using Angular Translate to display the
+translated strings. It works with key/value pairs in .json format,
+which is also the format used to store the translations in Transifex.</p>
+<h3 id="setting-up-transifex-locally">Setting up Transifex locally<a class="headerlink" href="#setting-up-transifex-locally" title="Permanent link">&para;</a></h3>
+<p>To <a href="https://developers.transifex.com/docs/cli">set up the Transifex
+client</a>, you'll need a
+Transifex account and API key. In the project's top level directory,
+initialize Transifex service: <code>tx init</code>. The init process will ask for
+service URL (leave the default suggestion by hitting enter) and your
+Transifex username/password.</p>
+<p>The .tx folder contains the Transifex config file. This is where you
+can find the mappings to local translation files.</p>
+<h3 id="update-translation-strings">Update translation strings<a class="headerlink" href="#update-translation-strings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>yarn build-locales</code> -  Execute that command in the <code>frontend</code>
+  folder to get the new translatable strings from all the
+  <code>messages.js</code> files in the frontend code. The changes in the strings
+  will be pushed to <code>frontend/src/locales/en.json</code> file. The ideal is
+  to execute that command before every pull request that change
+  something in the translatable strings.</li>
+<li>After the pull request is merged to the <code>develop</code> branch, the
+  command <code>tx push -s</code> needs to be executed in order to push the
+  changes to Transifex. The translators receive a notification every
+  time we push changes to Transifex.</li>
+</ul>
+<h3 id="update-with-latest-translations">Update with latest translations<a class="headerlink" href="#update-with-latest-translations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Before a release, new translations need to be pulled in: <code>tx pull
+  -af --mode translator</code> -  Gets all translations from Transifex and
+  puts them into <code>frontend/src/locales/</code>.</li>
+<li>The <a href="https://www.transifex.com/hotosm/tasking-manager/dashboard/">Transifex
+  dashboard</a>
+  can be used to check the status of the translations. If a language
+  is not enabled in the <code>.tx/config</code> file, the translation updates
+  will be downloaded to the <code>.tx/tasking-manager.version-4/</code> folder.</li>
+</ul>
+<h3 id="adding-a-new-language">Adding a new language<a class="headerlink" href="#adding-a-new-language" title="Permanent link">&para;</a></h3>
+<p>The steps required to add a new language support to Tasking Manager
+are the following:</p>
+<ul>
+<li>Add the language support using the <a href="https://www.transifex.com/hotosm/tasking-manager/dashboard/">Transifex
+  dashboard</a>;</li>
+<li>Edit <code>.tx/config</code> and add a line like: <code>trans.ml = frontend/src/locales/ml.json</code></li>
+<li>Add the new language and language code to:</li>
+<li>The <code>SUPPORTED_LANGUAGES</code> dictionary in the config file <code>backend/config.py</code>;</li>
+<li>The <code>supportedLocales</code> array on <code>frontend/src/utils/internationalization.js</code>;</li>
+<li>The polyfills in <code>frontend/src/utils/polyfill.js</code>;</li>
+<li>If the new language is not yet supported by
+    <a href="https://github.com/hotosm/iso-countries-languages">iso-countries-languages</a>,
+    we need to update it and publish a new version.</li>
+</ul>
+<h3 id="pushing-translations">Pushing translations<a class="headerlink" href="#pushing-translations" title="Permanent link">&para;</a></h3>
+<p>You can also translate locally and push the
+Use Transifex's <code>tx push -s</code> to push local changes to Transifex.</p>
+<ul>
+<li>Argument <code>-s</code> pushes source files (English in our case)</li>
+<li>Argument <code>-t</code> pushes all translation files</li>
+</ul>
 
 
 
