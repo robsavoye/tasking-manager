@@ -6,5 +6,5 @@ var searchData=
   ['bannertype_3',['BannerType',['../classbackend_1_1models_1_1postgis_1_1statuses_1_1BannerType.html',1,'backend::models::postgis::statuses']]],
   ['baseexception_4',['BaseException',['../classbackend_1_1exceptions_1_1BaseException.html',1,'backend::exceptions']]],
   ['bboxtoobigerror_5',['BBoxTooBigError',['../classbackend_1_1services_1_1project__search__service_1_1BBoxTooBigError.html',1,'backend::services::project_search_service']]],
-  ['build_5fencoded_5fdata_5fframe_6',['build_encoded_data_frame',['../classbackend_1_1services_1_1recommendation__service_1_1ProjectRecommendationService.html#a270f63f078dc9c29846412d2373a7f7f',1,'backend::services::recommendation_service::ProjectRecommendationService']]]
+  ['build_5fencoded_5fdata_5fframe_6',['build_encoded_data_frame',['../classbackend_1_1services_1_1recommendation__service_1_1ProjectRecommendationService.html#afb2f7d7f31767e64c06a5819c536b906',1,'backend::services::recommendation_service::ProjectRecommendationService']]]
 ];

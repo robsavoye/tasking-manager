@@ -1,5 +1,4 @@
 <map id="backend.api.teams.actions.TeamsActionsLeaveAPI" name="backend.api.teams.actions.TeamsActionsLeaveAPI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,196,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="64,5,137,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,89,103,123,98,123,98,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,188,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,5,136,83"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="backend.services.project_service.ProjectServiceError" name="backend.services.project_service.ProjectServiceError">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,200,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="64,5,141,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,89,105,123,100,123,100,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,193,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="59,5,139,83"/>
 </map>

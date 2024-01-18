@@ -1,5 +1,4 @@
 <map id="backend.services.grid.split_service.SplitServiceError" name="backend.services.grid.split_service.SplitServiceError">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,191,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="59,5,137,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,89,101,123,95,123,95,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,183,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="54,5,134,83"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="backend.api.annotations.resources.AnnotationsRestAPI" name="backend.api.annotations.resources.AnnotationsRestAPI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,248,252"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="90,5,163,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,89,129,123,124,123,124,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,233,252"/>
+<area shape="rect" id="node2" title=" " alt="" coords="80,5,159,83"/>
 </map>

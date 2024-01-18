@@ -1,5 +1,4 @@
 <map id="backend.services.project_search_service.BBoxTooBigError" name="backend.services.project_search_service.BBoxTooBigError">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,235,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="81,5,159,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,89,123,123,117,123,117,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,227,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="76,5,156,83"/>
 </map>

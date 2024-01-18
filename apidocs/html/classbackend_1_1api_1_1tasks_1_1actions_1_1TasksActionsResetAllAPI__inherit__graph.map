@@ -1,5 +1,4 @@
 <map id="backend.api.tasks.actions.TasksActionsResetAllAPI" name="backend.api.tasks.actions.TasksActionsResetAllAPI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,191,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="61,5,135,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,89,101,123,95,123,95,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,184,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="55,5,134,83"/>
 </map>

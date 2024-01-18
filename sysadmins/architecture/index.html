@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://www.hotosm.org/sysadmins/architecture/">
       
       
-        <link rel="prev" href="../ci-cd/">
+        <link rel="prev" href="../deployment/">
       
       
-        <link rel="next" href="../../apidocs/html/">
+        <link rel="next" href="../migration/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -356,6 +356,86 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/review-pr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reviewing PRs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/submit-pr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submitting a PR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/tmschema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database Schema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/translations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -412,26 +492,6 @@
   
   <span class="md-ellipsis">
     Deployment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ci-cd/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CI
   </span>
   
 
@@ -505,6 +565,86 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ci-cd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -609,7 +749,7 @@
 
 
 <h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
-<p><img alt="TM Architecture" src="../assets/tm-architecture.svg" /></p>
+<p><img alt="TM Architecture" src="../../images/tm-architecture.svg" /></p>
 <p>Reference for the <a href="../scripts/aws/cloudformation/tasking-manager.template.js">Cloudformation script</a>:</p>
 <p><strong>TaskingManagerASG</strong> AutoScalingGroup configures the properties of the Autoscaling Group. There is a condition that determines three levels of autoscaling: development (1 instance only), demo (max 3 instances), and production (min 2 max 6 instances).</p>
 <p><strong>TaskingManagerScaleUp</strong> Scaling Policy determines the threshold at which the ASG scales up. We use the CloudWatch metric ALBRequestCountPerTarget to keep the number of requests per instance below a certain level.</p>

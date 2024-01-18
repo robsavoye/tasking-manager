@@ -1,5 +1,4 @@
 <map id="backend.models.dtos.licenses_dto.LicenseDTO" name="backend.models.dtos.licenses_dto.LicenseDTO">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,213,273"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="83,5,136,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,89,112,123,107,123,107,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,204,267"/>
+<area shape="rect" id="node2" title=" " alt="" coords="76,5,133,83"/>
 </map>

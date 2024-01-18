@@ -1,5 +1,4 @@
 <map id="backend.services.validator_service.ValidatorServiceError" name="backend.services.validator_service.ValidatorServiceError">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,213,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="71,5,148,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,89,112,123,107,123,107,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,203,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="64,5,144,83"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="backend.models.dtos.interests_dto.InterestDTO" name="backend.models.dtos.interests_dto.InterestDTO">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,217,295"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="85,5,138,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,89,114,123,109,123,109,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,205,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="77,5,134,83"/>
 </map>

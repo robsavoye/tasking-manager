@@ -1,5 +1,4 @@
 <map id="backend.models.dtos.stats_dto.OrganizationTasksStatsDTO" name="backend.models.dtos.stats_dto.OrganizationTasksStatsDTO">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,231,337"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="91,5,145,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,89,121,123,115,123,115,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,224,311"/>
+<area shape="rect" id="node2" title=" " alt="" coords="86,5,143,83"/>
 </map>

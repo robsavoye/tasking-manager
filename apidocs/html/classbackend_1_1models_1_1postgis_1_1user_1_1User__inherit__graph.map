@@ -1,5 +1,4 @@
 <map id="backend.models.postgis.user.User" name="backend.models.postgis.user.User">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,240,849"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="86,5,159,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,89,125,123,120,123,120,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,228,663"/>
+<area shape="rect" id="node2" title=" " alt="" coords="79,5,154,83"/>
 </map>

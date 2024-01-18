@@ -1,7 +1,5 @@
 <map id="backend.api.users.statistics.UsersStatisticsAPI" name="backend.api.users.statistics.UsersStatisticsAPI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,203,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,5,86,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,86,88,122,83,124,67,89"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="110,5,207,75"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,89,125,124,120,122,136,86"/>
+<area shape="rect" id="node1" title=" " alt="" coords="9,131,198,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,84,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,5,215,83"/>
 </map>

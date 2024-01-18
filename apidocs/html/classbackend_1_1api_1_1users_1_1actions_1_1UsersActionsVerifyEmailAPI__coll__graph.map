@@ -1,5 +1,4 @@
 <map id="backend.api.users.actions.UsersActionsVerifyEmailAPI" name="backend.api.users.actions.UsersActionsVerifyEmailAPI">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,199,209"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="65,5,139,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,89,105,123,99,123,99,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,196,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,140,83"/>
 </map>
