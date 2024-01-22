@@ -436,6 +436,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dataflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Flow Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -750,7 +770,7 @@
 
 <h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
 <p><img alt="TM Architecture" src="../../images/tm-architecture.svg" /></p>
-<p>Reference for the <a href="../scripts/aws/cloudformation/tasking-manager.template.js">Cloudformation script</a>:</p>
+<p>Reference for the <a href="../../scripts/aws/cloudformation/tasking-manager.template.js">Cloudformation script</a>:</p>
 <p><strong>TaskingManagerASG</strong> AutoScalingGroup configures the properties of the Autoscaling Group. There is a condition that determines three levels of autoscaling: development (1 instance only), demo (max 3 instances), and production (min 2 max 6 instances).</p>
 <p><strong>TaskingManagerScaleUp</strong> Scaling Policy determines the threshold at which the ASG scales up. We use the CloudWatch metric ALBRequestCountPerTarget to keep the number of requests per instance below a certain level.</p>
 <p><strong>TaskingManagerLaunchConfiguration</strong> has a number of metadata files and commands which are loaded and run during instantiation of a new server into the ASG. The Tasking Manager environment variables are set in this resource.</p>
